@@ -1,0 +1,154 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+	float x, y;
+	char operador;
+
+	printf("                      \n");
+	printf("|=======================|\n");
+	printf("|      CALCULADORA      |\n");
+	printf("|=======================|\n");
+	printf(" Qual o primeiro número? ");
+	printf("                      \n");
+	scanf("%f",&x);
+	printf(" Qual operação desejada? ");
+	printf("                      \n");
+	scanf(" %c",&operador);
+	printf(" Agora o segundo número? ");
+	printf("                      \n");
+
+	scanf("%f",&y);
+	switch(operador){
+      case '+': printf("%.2f\n", x+y); 
+	  break;
+      case '-': printf("%.2f\n", x-y); 
+	  break;
+      case '*': printf("%.2f\n", x*y); 
+	  break;
+      case '/': printf("%.2f\n", x/y);
+	  if ( y != 0 ) { }
+	  else{
+	  	system("color 0c"); // muda a cor para vermelho 
+		                 
+		    	         printf("\n\n      -------ERRO-------");
+                         printf("\n      --OPÇÃO INVÁLIDA--\n");
+						 printf("\n =========================\n");
+						 printf("  |ESCOLHA UMA OPÇÃO VÁLIDA|\n");  
+						 printf("  ==========================\n");
+	  }
+	  break;
+	  default: printf("Operador Inválido!\n");
+      
+	  
+		                 
+		system("cls"); // limpa a tela
+		                 system("color 0c"); // muda a cor para vermelho 
+		                 
+		    	         printf("\n\n      -------ERRO-------");
+                         printf("\n      --OPERADOR INVÁLIDO--\n");
+						 printf("\n =========================\n");
+						 printf("  |ESCOLHA UMA OPÇÃO VÁLIDA|\n");  
+						 printf("  ==========================\n");
+						 ;    
+
+
+						 	
+ 
+			            printf("                     \n");
+                         printf("     ===================\n");
+                         printf("     |      DIGITE     |\n");
+                         printf("     |=================|\n");
+                         printf("     |[0] SAIR         |\n");
+                         printf("     |[1] DEV C++      |\n");
+                         printf("     ===================\n");  
+                         
+                         
+                         
+
+}
+
+}
+
+
+=========================================================================================
+Algotitimo calculadora;
+
+importar <stdlib.h>
+importar <stdio.h>
+importar <locale.h>
+importar <math.h>
+	
+variáveis
+	declare x, y: inteiro;
+	declare operador;
+início
+	escreva(                      nova linha");
+	escreva(|=======================|nova linha);
+	escreva(|      CALCULADORA      |nova linha);
+	escreva(|=======================|nova linha);
+	escreva( Qual o primeiro número? );
+	escreva(                      nova linha);
+	leia(x);
+	escreva( Qual operação desejada? );
+	escreva(                      nova linha);
+	leia(operador);
+	escreva( Agora o segundo número? ");
+	escreva(                      nova linha);
+	leia(y);
+	escolha(operador){
+      caso 'adição': escreva(float,nova linha: x+y); 
+	  
+      caso 'subtração': escreva(float,nova linha: x-y); 
+	  
+      caso 'multiplicação': escreva(float,nova linha: x*y); 
+	  
+      caso 'divisão': escreva(float,nova linha: x/y);
+	  se ( y <> 0 ) { }
+	  então{
+	  	sistema("cor");
+		                 
+		    	         escreva("nova linha      -------ERRO-------");
+                         escreva("      --OPÇÃO INVÁLIDA--");
+						 escreva("\n =========================");
+						 escreva("  |ESCOLHA UMA OPÇÃO VÁLIDA|");  
+						 escreva("  ==========================");
+	  	}
+	  
+	  padrão: escreva("Operador Inválido!");
+      
+	  
+		                 
+		
+		    	         escreva("\n\n      -------ERRO-------");
+                         escreva("\n      --OPERADOR INVÁLIDO--\n");
+						 escreva("\n =========================\n");
+						 escreva("  |ESCOLHA UMA OPÇÃO VÁLIDA|\n");  
+						 escreva("  ==========================\n");
+						 ;    
+
+
+						 	
+ 
+			            escreva("                     \n");
+                         escreva("     ===================\n");
+                         escreva("     |      DIGITE     |\n");
+                         escreva("     |=================|\n");
+                         escreva("     |[0] SAIR         |\n");
+                         escreva("     |[1] DEV C++      |\n");
+                         escreva("     ===================\n");  
+                         
+                         
+                         
+fim
+
+
+
+
+
+
+
